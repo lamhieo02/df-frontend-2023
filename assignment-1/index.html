@@ -1,14 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Bookstore</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
-    Hello world
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Bookstore</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/d522fd5c35.js" crossorigin="anonymous"></script>
+  <script src="./store_local_storage.js" ></script>
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <div class="header">
+    <h1 class="header-right">Bookstore</h1>
+
+    <div class="header-left">
+      <i id="icon-profile" class="fa-solid fa-circle-user fa-2xl" style="color: #9aa1ac;"></i>
+      <p id="username">John Doe</p>
+    </div>
+  </div>
+  <hr>
+  <div class="search-and-add-container">
+    <input type="text" id="search-input" placeholder="Search books">
+    <button id="add-button">Add book</button>
+  </div>
+
+  <div class="list-book">
+    <table id="book-table" style="width:100%">
+      <tr>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Topic</th>
+        <th>Action</th>
+      </tr>
+
+      <tr>
+        <td>Refactoring</td>
+        <td>Martin Fowler</td>
+        <td>Programming</td>
+        <td class="delete-link">Delete</td>
+      </tr>
+
+      <tr>
+        <td>Design Data-Intensive Applications</td>
+        <td>Martin Kleppmann</td>
+        <td>Database</td>
+        <td class="delete-link">Delete</td>
+      </tr>
+
+      <tr>
+        <td>The Phoenix Project</td>
+        <td>Gene Kim</td>
+        <td>DevOps</td>
+        <td class="delete-link">Delete</td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  <div class="alert">
+    <strong>Delete book</strong>
+    <i class="fa-solid fa-xmark close-button"></i>
+    <p>Do you want to delete</p>
+    <p><b>Refactoring</b> book?</p>
+
+    <button class="delete-button">Delete</button>
+    <button class="cancel-button">Cancel</button>
+  </div>
+
+  <div class="add-book">
+    <b>Add book</b>
+    <i id="exit-create-book" class="fa-solid fa-xmark"></i>
+
+    <div class="input-container">
+
+      <div class="input-name">
+        <label class="lb-name">Name</label>
+        <input type="text" id="name" placeholder="Enter book name">
+      </div>
+
+      <div class="input-author">
+        <label class="lb-author">Author</label>
+        <input type="text" id="author" placeholder="Enter author">
+      </div>
+
+      <div class="input-topic">
+        <label class="lb-topic">Topic</label>
+        <select id="dropdown">
+          <option value="programming">Programming</option>
+          <option value="database">Database</option>
+          <option value="devops">DevOps</option>
+        </select>
+      </div>
+
+    </div>
+
+    <button class="create-button">Create</button>
+  </div>
+</body>
+
 </html>

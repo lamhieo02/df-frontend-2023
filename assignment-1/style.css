@@ -1,4 +1,215 @@
-html {
-  height: 100%;
+
+
+body {
+  background-color: rgb(244, 240, 240);
+  margin: 0;
+}
+
+.header {
+  background-color: white; 
+  padding: 10px;
+}
+
+.header-right, .header-left, #icon-profile, #username {
+  display: inline;
+}
+
+hr {
+  border: 2px solid #bfb9b9;
+  margin: 0;
+}
+
+.header-left {
+  margin-top: 10px;
+  float: right;
+}
+
+.search-and-add-container {
+  margin-top: 10px;
+  margin-right: 12px;
+  float: right;
+  margin-bottom: 20px;
+}
+
+#add-button {
+  color: white;
+  background-color: rgb(190, 60, 60);
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid rgb(190, 60, 60);
+  cursor: pointer;
+}
+
+#search-input {
+  width: 200px;
+  height: 28px;
+  border-radius: 5px;
+  border: 1px solid #bfb9b9;
+  padding-left: 5px;
+}
+
+#search-input::placeholder {
+  font-style: italic;
+}
+
+table, th, td {
+  text-align: left;
+  border:1px solid;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+  border: 2px solid #bfb9b9;
+}
+
+.delete-link {
+  color: rgb(190, 60, 60);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.list-book {
+  margin: 20px;
+}
+
+.alert p:nth-of-type(2) {
+  margin-bottom: 1px;
+}
+
+.alert {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 2px #bfb9b9;
+  padding: 25px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: white;
+
+  display: none;
+}
+
+.alert p:nth-child(4) {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.alert p:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.delete-button {
+  border: none; 
+  background: none;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.cancel-button {
+  color: white;
+  border: solid 1px rgb(190, 60, 60);
+  background-color: rgb(190, 60, 60);
+  cursor: pointer;
+  padding: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 8px;
+}
+
+.fa-xmark {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.add-book {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 2px #bfb9b9;
+  padding: 100px 75px;
+  background-color: white;
+  /* display: none; */
+}
+
+.add-book .fa-xmark {
+  position: absolute;
+  top: 0;
+  right: 0; 
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.add-book b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.input-title {
+  display: block;
+}
+
+.input-container {
+  width: 300px;
+}
+
+.input-container label {
+  display: block;
+}
+
+.input-container input {
   width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #bfb9b9;
+  padding-left: 5px;
+}
+
+.add-book {
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+.input-author {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 75%;
+  color: #262323;
+  font-weight: lighter;
+}
+
+.input-topic select {
+  width: 103%; 
+  height: 30px;
+  border: 1px solid #bfb9b9; 
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.create-button {
+  color: white;
+  border: solid 1px rgb(190, 60, 60);
+  background-color: rgb(190, 60, 60);
+  cursor: pointer;
+  padding: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+  margin-top: 35px;
+  margin-left: 212px;
 }
