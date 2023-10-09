@@ -1,0 +1,34 @@
+#book-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+//
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.delete-link {
+    color: rgb(190, 60, 60);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.list-book {
+    margin: 0 20px;
+}

@@ -1,0 +1,15 @@
+.header>div {
+    display: inline-block;
+}
+
+.header>div:first-of-type {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.header>div:nth-child(3) {
+    float: right;
+    margin: 20px;
+    margin-right: 10px;
+}
